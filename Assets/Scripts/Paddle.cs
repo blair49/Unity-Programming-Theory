@@ -17,10 +17,17 @@ public class Paddle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveLeftRight();
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!GameManager.GetInstance().isGameOver)
         {
-            LaunchBall();
+            MoveLeftRight();
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                if (!GameManager.GetInstance().started)
+                {
+                    GameManager.GetInstance().StartGame();
+                    LaunchBall();
+                }
+            }
         }
     }
 
