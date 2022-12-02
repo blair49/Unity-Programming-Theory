@@ -25,8 +25,10 @@ public class GameManager : MonoBehaviour
 
     int score;
 
-    public bool isGameOver = false;
+    // ENCAPSULATION
+    public bool isGameOver { get; private set; }
 
+    // ENCAPSULATION
     public bool started { get; private set; }
 
     private static GameManager INSTANCE = null;
@@ -44,6 +46,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isGameOver = false;
         started = false;
         score = 0;
         scoreText.text = "Score: 0";
@@ -59,6 +62,7 @@ public class GameManager : MonoBehaviour
 
     }
 
+    // ABSTRACTION
     private void SpawnBricks()
     {
         if (bricks != null && bricks.Length != 0)

@@ -1063,15 +1063,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98608a8aa8d3b3c42b932c0e1523edeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noOfRows: 2
-  noOfCols: 2
+  noOfRows: 5
+  noOfCols: 10
   bricks:
   - {fileID: 309108139354275991, guid: e48a5dbcc0b52824a9cea62c90c0fede, type: 3}
   - {fileID: 5174935554811749119, guid: 7c02700bffa66544aa8af0a84cb3a0da, type: 3}
   - {fileID: 6937832912909707894, guid: ea49daf0e92dde640b603f6b01fcd9a8, type: 3}
   scoreText: {fileID: 931080434}
   gameOverPanel: {fileID: 2050676752}
-  isGameOver: 0
 --- !u!4 &991203394
 Transform:
   m_ObjectHideFlags: 0
@@ -1420,7 +1419,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.4245283, g: 0.093716614, b: 0.10922341, a: 0}
+  m_BackGroundColor: {r: 0.18039216, g: 0.12156863, b: 0.1254902, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

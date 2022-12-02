@@ -31,7 +31,7 @@ public class Paddle : MonoBehaviour
         }
     }
 
-    //abstraction
+    // ABSTRACTION
     void MoveLeftRight()
     {
         float input = Input.GetAxis("Horizontal");
@@ -48,6 +48,7 @@ public class Paddle : MonoBehaviour
         transform.position = pos;
     }
 
+    // ABSTRACTION
     void LaunchBall()
     {
         float randomDirection = Random.Range(-1.0f, 1.0f);

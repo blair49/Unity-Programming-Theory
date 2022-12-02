@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BronzeBrick : Brick //inheritance
+// INHERITANCE
+public class BronzeBrick : Brick
 {
     private int value = 1;
 

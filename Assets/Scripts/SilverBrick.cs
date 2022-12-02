@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SilverBrick : Brick //Inheritance
+// INHERITANCE
+public class SilverBrick : Brick
 {
     int value = 2;
 
@@ -11,6 +12,7 @@ public class SilverBrick : Brick //Inheritance
         base.pointValue = value;
     }
 
+    // POLYMORPHISM
     public override void destorySelf()
     {
         GameManager.GetInstance().UpdateScore(value);
